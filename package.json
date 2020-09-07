@@ -1,6 +1,6 @@
 {
   "name": "@standardorg/prettier-config",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "standardorg's Prettier config",
   "main": ".prettierrc.json",
   "author": "Juan Garcia",

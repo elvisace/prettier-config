@@ -1,0 +1,35 @@
+{
+  "name": "@standardorg/prettier-config",
+  "version": "0.0.0",
+  "description": "standardorg's Prettier config",
+  "main": ".prettierrc.json",
+  "author": "Juan Garcia",
+  "license": "MIT",
+  "dependencies": {
+    "prettier": "^2.0.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^9.0.1",
+    "@commitlint/config-conventional": "^9.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/npm": "^7.0.5",
+    "husky": "^4.2.5",
+    "semantic-release": "^17.1.1"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "scripts": {
+    "semantic-release": "semantic-release"
+  }
+}
